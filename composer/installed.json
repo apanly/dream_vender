@@ -605,6 +605,69 @@
         ]
     },
     {
+        "name": "wrep/notificato",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mac-cain13/notificato.git",
+            "reference": "b6e025cff000d2235c22ab7c1fd1b7d15389f4dd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://packagist.phpcomposer.com/files/mac-cain13/notificato/b6e025cff000d2235c22ab7c1fd1b7d15389f4dd.zip",
+            "reference": "b6e025cff000d2235c22ab7c1fd1b7d15389f4dd",
+            "shasum": ""
+        },
+        "require": {
+            "ext-openssl": "*",
+            "ext-sockets": "*",
+            "ext-spl": "*",
+            "lib-openssl": "*",
+            "php": ">=5.4",
+            "psr/log": "1.0.*"
+        },
+        "replace": {
+            "wrep/notificare": "*"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.4.*",
+            "sami/sami": "dev-master"
+        },
+        "suggest": {
+            "wrep/notificato-symfony": "Integrate Notificato into Symfony2"
+        },
+        "time": "2016-02-11 21:19:52",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Wrep\\Notificato\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mathijs Kadijk",
+                "email": "mkadijk@gmail.com"
+            }
+        ],
+        "description": "Takes care of push notifications in your PHP projects.",
+        "homepage": "https://github.com/mac-cain13/notificato",
+        "keywords": [
+            "apns",
+            "aps",
+            "ios",
+            "notifications",
+            "push",
+            "push notifications",
+            "pushnotifications"
+        ]
+    },
+    {
         "name": "yiisoft/yii2-codeception",
         "version": "2.0.5",
         "version_normalized": "2.0.5.0",
@@ -811,39 +874,32 @@
         ]
     },
     {
-        "name": "fxp/composer-asset-plugin",
-        "version": "v1.2.1",
-        "version_normalized": "1.2.1.0",
+        "name": "bupt1987/html-parser",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/fxpio/composer-asset-plugin.git",
-            "reference": "d7d189e8ffac26a2e39e26a9c75e1fc5c2e2b98d"
+            "url": "https://github.com/bupt1987/html-parser.git",
+            "reference": "a30c4fc9355acf869167cbc8a78ccb72c608d8ab"
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/fxpio/composer-asset-plugin/d7d189e8ffac26a2e39e26a9c75e1fc5c2e2b98d.zip",
-            "reference": "d7d189e8ffac26a2e39e26a9c75e1fc5c2e2b98d",
+            "url": "https://packagist.phpcomposer.com/files/bupt1987/html-parser/a30c4fc9355acf869167cbc8a78ccb72c608d8ab.zip",
+            "reference": "a30c4fc9355acf869167cbc8a78ccb72c608d8ab",
             "shasum": ""
         },
         "require": {
-            "composer-plugin-api": "^1.0",
-            "php": ">=5.3.3"
+            "php": ">=5.5"
         },
         "require-dev": {
-            "composer/composer": "^1.0.0"
+            "phpunit/phpunit": "^4.8"
         },
-        "time": "2016-08-03 07:44:07",
-        "type": "composer-plugin",
-        "extra": {
-            "class": "Fxp\\Composer\\AssetPlugin\\FxpAssetPlugin",
-            "branch-alias": {
-                "dev-master": "1.2-dev"
-            }
-        },
-        "installation-source": "dist",
+        "time": "2016-08-19 03:50:49",
+        "type": "library",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
-                "Fxp\\Composer\\AssetPlugin\\": ""
+                "HtmlParser\\": "src/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -852,21 +908,14 @@
         ],
         "authors": [
             {
-                "name": "François Pluchino",
-                "email": "francois.pluchino@gmail.com"
+                "name": "俊杰jerry",
+                "email": "bupt1987@gmail.com",
+                "homepage": "http://bupt1987.github.io",
+                "role": "Developer"
             }
         ],
-        "description": "NPM/Bower Dependency Manager for Composer",
-        "homepage": "https://github.com/fxpio/composer-asset-plugin",
-        "keywords": [
-            "asset",
-            "bower",
-            "composer",
-            "dependency manager",
-            "nodejs",
-            "npm",
-            "package"
-        ]
+        "description": "Html Parser",
+        "homepage": "https://github.com/bupt1987/html-parser"
     },
     {
         "name": "xiaosier/libweibo",
@@ -914,34 +963,39 @@
         ]
     },
     {
-        "name": "psr/log",
-        "version": "1.0.1",
-        "version_normalized": "1.0.1.0",
+        "name": "fxp/composer-asset-plugin",
+        "version": "v1.2.2",
+        "version_normalized": "1.2.2.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/php-fig/log.git",
-            "reference": "5277094ed527a1c4477177d102fe4c53551953e0"
+            "url": "https://github.com/fxpio/composer-asset-plugin.git",
+            "reference": "60bc94db574103dfc73acb907fa79c6dfc86c96e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/php-fig/log/5277094ed527a1c4477177d102fe4c53551953e0.zip",
-            "reference": "5277094ed527a1c4477177d102fe4c53551953e0",
+            "url": "https://packagist.phpcomposer.com/files/fxpio/composer-asset-plugin/60bc94db574103dfc73acb907fa79c6dfc86c96e.zip",
+            "reference": "60bc94db574103dfc73acb907fa79c6dfc86c96e",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.0"
+            "composer-plugin-api": "^1.0",
+            "php": ">=5.3.3"
         },
-        "time": "2016-09-19 16:02:08",
-        "type": "library",
+        "require-dev": {
+            "composer/composer": "^1.0.0"
+        },
+        "time": "2016-10-12 08:03:45",
+        "type": "composer-plugin",
         "extra": {
+            "class": "Fxp\\Composer\\AssetPlugin\\FxpAssetPlugin",
             "branch-alias": {
-                "dev-master": "1.0.x-dev"
+                "dev-master": "1.2-dev"
             }
         },
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
-                "Psr\\Log\\": "Psr/Log/"
+                "Fxp\\Composer\\AssetPlugin\\": ""
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -950,79 +1004,20 @@
         ],
         "authors": [
             {
-                "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
+                "name": "François Pluchino",
+                "email": "francois.pluchino@gmail.com"
             }
         ],
-        "description": "Common interface for logging libraries",
-        "homepage": "https://github.com/php-fig/log",
+        "description": "NPM/Bower Dependency Manager for Composer",
+        "homepage": "https://github.com/fxpio/composer-asset-plugin",
         "keywords": [
-            "log",
-            "psr",
-            "psr-3"
-        ]
-    },
-    {
-        "name": "wrep/notificato",
-        "version": "1.2.0",
-        "version_normalized": "1.2.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/mac-cain13/notificato.git",
-            "reference": "b6e025cff000d2235c22ab7c1fd1b7d15389f4dd"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/mac-cain13/notificato/b6e025cff000d2235c22ab7c1fd1b7d15389f4dd.zip",
-            "reference": "b6e025cff000d2235c22ab7c1fd1b7d15389f4dd",
-            "shasum": ""
-        },
-        "require": {
-            "ext-openssl": "*",
-            "ext-sockets": "*",
-            "ext-spl": "*",
-            "lib-openssl": "*",
-            "php": ">=5.4",
-            "psr/log": "1.0.*"
-        },
-        "replace": {
-            "wrep/notificare": "*"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "4.4.*",
-            "sami/sami": "dev-master"
-        },
-        "suggest": {
-            "wrep/notificato-symfony": "Integrate Notificato into Symfony2"
-        },
-        "time": "2016-02-11 21:19:52",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Wrep\\Notificato\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Mathijs Kadijk",
-                "email": "mkadijk@gmail.com"
-            }
-        ],
-        "description": "Takes care of push notifications in your PHP projects.",
-        "homepage": "https://github.com/mac-cain13/notificato",
-        "keywords": [
-            "apns",
-            "aps",
-            "ios",
-            "notifications",
-            "push",
-            "push notifications",
-            "pushnotifications"
+            "asset",
+            "bower",
+            "composer",
+            "dependency manager",
+            "nodejs",
+            "npm",
+            "package"
         ]
     },
     {
@@ -1190,17 +1185,17 @@
     },
     {
         "name": "yiisoft/yii2",
-        "version": "2.0.9",
-        "version_normalized": "2.0.9.0",
+        "version": "2.0.10",
+        "version_normalized": "2.0.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133"
+            "reference": "5bfcb7a6dfa9771e2248eb8c4448613330f343ff"
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/yiisoft/yii2-framework/2b75151ea60e1fd820046416eee2e89c3dda1133.zip",
-            "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133",
+            "url": "https://packagist.phpcomposer.com/files/yiisoft/yii2-framework/5bfcb7a6dfa9771e2248eb8c4448613330f343ff.zip",
+            "reference": "5bfcb7a6dfa9771e2248eb8c4448613330f343ff",
             "shasum": ""
         },
         "require": {
@@ -1216,7 +1211,7 @@
             "php": ">=5.4.0",
             "yiisoft/yii2-composer": "~2.0.4"
         },
-        "time": "2016-07-11 13:36:42",
+        "time": "2016-10-20 12:02:50",
         "bin": [
             "yii"
         ],
@@ -1365,32 +1360,34 @@
         "installation-source": "dist"
     },
     {
-        "name": "bupt1987/html-parser",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "name": "psr/log",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/bupt1987/html-parser.git",
-            "reference": "a30c4fc9355acf869167cbc8a78ccb72c608d8ab"
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/bupt1987/html-parser/a30c4fc9355acf869167cbc8a78ccb72c608d8ab.zip",
-            "reference": "a30c4fc9355acf869167cbc8a78ccb72c608d8ab",
+            "url": "https://packagist.phpcomposer.com/files/php-fig/log/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d.zip",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.5"
+            "php": ">=5.3.0"
         },
-        "require-dev": {
-            "phpunit/phpunit": "^4.8"
-        },
-        "time": "2016-08-19 03:50:49",
+        "time": "2016-10-10 12:19:37",
         "type": "library",
-        "installation-source": "source",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
-                "HtmlParser\\": "src/"
+                "Psr\\Log\\": "Psr/Log/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -1399,14 +1396,17 @@
         ],
         "authors": [
             {
-                "name": "俊杰jerry",
-                "email": "bupt1987@gmail.com",
-                "homepage": "http://bupt1987.github.io",
-                "role": "Developer"
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
             }
         ],
-        "description": "Html Parser",
-        "homepage": "https://github.com/bupt1987/html-parser"
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
     },
     {
         "name": "sinergi/browser-detector",

@@ -45,8 +45,6 @@ class Browser
     const YANDEX = 'Yandex';
     const EDGE = 'Edge';
     const DRAGON = 'Dragon';
-	const BAIDUBOT = 'BaiduBot';
-	const SOGOUBOT = 'SogouBot';
 
     const VERSION_UNKNOWN = 'unknown';
 

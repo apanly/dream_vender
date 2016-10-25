@@ -171,8 +171,7 @@ class BrowserDetector implements DetectorInterface
     {
         if (stripos(self::$userAgentString, 'bot') !== false ||
             stripos(self::$userAgentString, 'spider') !== false ||
-            stripos(self::$userAgentString, 'crawler') !== false ||
-            stripos(self::$userAgentString, 'spider') !== false
+            stripos(self::$userAgentString, 'crawler') !== false
         ) {
             self::$browser->setIsRobot(true);
 
